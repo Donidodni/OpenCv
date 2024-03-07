@@ -5,6 +5,8 @@
 #define CVUI_IMPLEMENTATION
 #include "cvui.h"
 
+
+//¾È³ç
 void MainUI::Mainmenu() {
 	cv::Mat main = cv::Mat(400, 500, CV_8UC3);
 
