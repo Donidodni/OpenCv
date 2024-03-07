@@ -40,3 +40,25 @@ void MainUI::Showdata(INFO input) {
 	}
 }
 
+void MainUI::MainProcess() {
+	cv::Mat Mainframe = cv::Mat(600, 1000, CV_8UC3);
+	cvui::init("Moble Delivery");
+	cvui::imshow("Moble Delivery", Mainframe);
+
+	while (1) {
+		if (waitKey(20) == 27 || cvui::button(Mainframe, 300, 200, "Box Size")) {
+			break;
+		}
+		else if (cvui::button(Mainframe, 300, 300, "Box QR code")) {
+			break;
+		}
+		else if (cvui::button(Mainframe, 300, 400, "Data View")) {
+			break;
+		}
+		else if (cvui::button(Mainframe, 300, 500, "Quit")) {
+			break;
+		}
+	}
+
+}
+
