@@ -34,7 +34,7 @@ void MainUI::Showdata(INFO input) {
 		cvui::text(datawindow, 60, 110, input.strsi, 0.7, 0xffffff);
 		cvui::text(datawindow, 60, 150, input.strroad, 0.7, 0xffffff);
 		cvui::text(datawindow, 60, 190, input.strnum, 0.7, 0xffffff);
-		//g한글
+		//g일본ㅁ어
 	}
 }
 
