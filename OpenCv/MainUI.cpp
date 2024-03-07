@@ -6,8 +6,8 @@
 #include "cvui.h"
 
 
-//안녕
 void MainUI::Mainmenu() {
+	// 메인화면 페이지 : while(1)문으로 인해 잠깐 프로세스가 중단 됩니다. 보기 싫으면 Main.cpp 에서 해당 함수를 제거하면 됩니다.
 	cv::Mat main = cv::Mat(400, 500, CV_8UC3);
 
 	cvui::init("Moble Delivery");
@@ -28,6 +28,7 @@ void MainUI::Mainmenu() {
 
 
 void MainUI::Showdata(INFO input) {
+	// 데이터 한눈에 보기 : 현재는 한글 표현 불가로 인해 테스트용이며 영어로는 기능합니다.
 	cv::Mat datawindow = cv::Mat(400, 500, CV_8UC3);
 	cvui::init("Moble Delivery");
 	while (1) {
